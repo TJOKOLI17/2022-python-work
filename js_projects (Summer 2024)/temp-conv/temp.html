@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- html opening tag -->
+    <head> <!-- head element contains ONLY META DATA necessary for browser to function properly -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1, shrink-to-fit=no">
+        <title>temp-conv</title>
+        <link rel="stylesheet" href="temp.css"/> 
+    </head>
+
+    <body> <!-- EVERYTHING we want the viewer to see is enclosed in the body tags -->
+        <form>
+            <h1>Temperature Conversion</h1>
+            
+            <input type="number" id="textBox" value="0"><br>
+            
+            <input type="radio" id="toFahrenheit" name="unit">
+            <label for="toFahrenheit">Celsius ➡ Fahrenheit</label><br>
+           
+            <input type="radio" id="toCelsius" name="unit">
+            <label for="toCelsius"> Fahrenheit ➡ Celsius</label><br>
+            
+            <button type="button" onclick="convert()">submit</button>
+            <p id="result"></p>
+        </form>
+
+        <script src="temp.js"></script> <!-- BEST PRACTICE IS TO PUT SCRIPT TAG LAST - ensures all elements have been properly geneated -->
+    </body>
+</html> <!-- html closing tag -->

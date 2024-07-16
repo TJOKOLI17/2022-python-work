@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- html opening tag -->
+    <head> <!-- head element contains ONLY META DATA necessary for browser to function properly -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1, shrink-to-fit=no">
+        <title>dice roller</title>
+        <link rel="stylesheet" href="dice.css"/> 
+    </head>
+
+    <body> <!-- EVERYTHING we want the viewer to see is enclosed in the body tags -->
+       <div id="container">
+            <h1>Dice Roller</h1>
+            <label># of dice</label>
+            <input type="number" value="1" min="1" id="numOfDice">
+            <button onclick="rollDice()">Roll Dice</button>
+            <div id="diceResult"></div>
+            <div id="diceImages"></div>
+       </div>
+
+        <script src="dice.js"></script> <!-- BEST PRACTICE IS TO PUT SCRIPT TAG LAST - ensures all elements have been properly geneated -->
+    </body>
+</html> <!-- html closing tag -->

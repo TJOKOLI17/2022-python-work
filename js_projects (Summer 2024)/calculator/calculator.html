@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- html opening tag -->
+    <head> <!-- head element contains ONLY META DATA necessary for browser to function properly -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1, shrink-to-fit=no">
+        <title>calculator</title>
+        <link rel="stylesheet" href="calculator.css"/> 
+    </head>
+
+    <body> <!-- EVERYTHING we want the viewer to see is enclosed in the body tags -->
+        <div id="calculator">
+            <input id="display" readonly>
+            <div id="btns">
+                <button onclick="appendToDisply('7')">7</button> 
+                <button onclick="appendToDisply('8')">8</button>
+                <button onclick="appendToDisply('9')">9</button>
+                <button class="operator" onclick="appendToDisply('x')">x</button>
+                <button onclick="appendToDisply('4')">4</button> 
+                <button onclick="appendToDisply('5')">5</button>
+                <button onclick="appendToDisply('6')">6</button>
+                <button class="operator" onclick="appendToDisply('-')">-</button> 
+                <button onclick="appendToDisply('1')">1</button> 
+                <button onclick="appendToDisply('2')">2</button>
+                <button onclick="appendToDisply('3')">3</button>
+                <button class="operator" onclick="appendToDisply('+')">+</button> 
+                <button class="operator" onclick="calculate('=')">=</button> 
+                <button onclick="appendToDisply('0')">0</button>
+                <button onclick="appendToDisply('.')">.</button>
+                <button class="operator" onclick="appendToDisply('/')">/</button> 
+                <button class="operator" onclick="clearDisplay()">C</button>
+            </div>
+        </div>
+
+        <script src="calculator.js"></script> <!-- BEST PRACTICE IS TO PUT SCRIPT TAG LAST - ensures all elements have been properly geneated -->
+    </body>
+</html> <!-- html closing tag -->

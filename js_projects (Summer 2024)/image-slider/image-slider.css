@@ -1,0 +1,56 @@
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide{
+    width: 100%;
+    display: none;
+}
+
+img.displaySlide{
+    display: block;
+    animation: fade 2s;
+}
+
+@keyframes fade {
+    from{opacity: .5}
+    to{opacity: 1}
+}
+
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform:  translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsl(0, 0%, 50%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#enableSlideshow{
+    position: absolute;
+    top: 85%;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.prev{
+    left: 0;
+}
+
+.next{
+    right: 0;
+}
+
+.greenText{
+    color: hsl(120, 62%, 51%)
+}
+
+.redText{
+    color: hsl(0, 71%, 56%)
+}

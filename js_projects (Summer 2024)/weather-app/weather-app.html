@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- html opening tag -->
+    <head> <!-- head element contains ONLY META DATA necessary for browser to function properly -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>MyWeather</title>
+        <link rel="stylesheet" href="weather-app.css"/> 
+    </head>
+
+    <body> <!-- EVERYTHING we want the viewer to see is enclosed in the body tags -->
+        <form class="weatherForm">
+            <input class="cityInput" type="text" placeholder="Enter city">
+            <button id="getWeatherBtn" type="submit">Get Weather</button>
+            <div class="card" style="display: none">
+            </div>
+        </form>
+        <script src="weather-app.js"></script> <!-- BEST PRACTICE IS TO PUT SCRIPT TAG LAST - ensures all elements have been properly geneated -->
+    </body>
+</html> <!-- html closing tag -->

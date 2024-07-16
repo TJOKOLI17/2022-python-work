@@ -1,0 +1,93 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left,rgba(255, 115, 80, 0.5), rgba(167, 73, 255, 0.943));
+    font-family: monospace;
+}
+
+#myH1{
+    font-size: 4rem;
+    text-align: center;
+    color: hsl(0,0%,25%)
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid;
+    border-radius: 50px;
+    background: linear-gradient(to left,rgba(192, 244, 255, 0.5), rgb(209, 255, 190));
+    padding: 25px;
+}
+
+
+#display{
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px hsla(0,0%,0%, 0.75);
+    margin-bottom: 25px;
+    
+}
+#controls{
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#controls button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    min-width: 125px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+#startBtn{
+    background-color: rgb(63, 205, 63);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color ease 0.5s;
+}
+
+#startBtn:hover{
+    background-color: rgb(56, 182, 56);
+}
+
+#startBtn:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Smaller shadow to simulate 'pressed' effect */
+    transform: translateY(1px); /* Moves the button down to create 'pressed' effect */
+}
+
+
+#stopBtn{
+    background-color: rgb(223, 42, 42);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color linear 0.2s;
+}
+#stopBtn:hover{
+    background-color: rgb(200, 38, 38);
+}
+
+#stopBtn:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Smaller shadow to simulate 'pressed' effect */
+    transform: translateY(1px); /* Moves the button down to create 'pressed' effect */
+}
+
+
+#resetBtn{
+    background-color: rgb(0, 145, 255);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color linear 0.2s;
+}
+#resetBtn:hover{
+    background-color: rgb(2, 125, 219);
+}
+
+#resetBtn:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Smaller shadow to simulate 'pressed' effect */
+    transform: translateY(1px); /* Moves the button down to create 'pressed' effect */
+}

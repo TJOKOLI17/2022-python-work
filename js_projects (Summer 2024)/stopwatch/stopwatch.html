@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- html opening tag -->
+    <head> <!-- head element contains ONLY META DATA necessary for browser to function properly -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1, shrink-to-fit=no">
+        <title>Stopwatch</title>
+        <link rel="stylesheet" href="stopwatch.css"/> 
+    </head>
+
+    <body> <!-- EVERYTHING we want the viewer to see is enclosed in the body tags -->
+        <h1 id="myH1">Stopwatch</h1>
+        <div id="container">
+            <div id="display">
+                00:00:00:00
+            </div>
+            <div id="controls">
+                <button id="startBtn" onclick="start()">START</button>
+                <button id="stopBtn" onclick="stop()">STOP</button>
+                <button id="resetBtn" onclick="reset()">RESET</button>
+            </div>
+        </div>
+        
+
+        <script src="stopwatch.js"></script> <!-- BEST PRACTICE IS TO PUT SCRIPT TAG LAST - ensures all elements have been properly geneated -->
+    </body>
+</html> <!-- html closing tag -->

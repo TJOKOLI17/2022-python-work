@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- html opening tag -->
+    <head> <!-- head element contains ONLY META DATA necessary for browser to function properly -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Rock, Paper, Scissors!</title>
+        <link rel="stylesheet" href="rock-paper-scissors.css"/> 
+    </head>
+
+    <body> <!-- EVERYTHING we want the viewer to see is enclosed in the body tags -->
+        <h1>Rock - Paper - Scissors</h1>
+        <div class="choices">
+            <button onclick="playGame('Rock')">🪨</button>
+            <button onclick="playGame('Paper')">📄</button>
+            <button onclick="playGame('Scissors')">✂️</button>
+        </div>
+
+        <div id="playerDisplay">PLAYER: </div>
+        <div id="computerDisplay">COMPUTER: </div>
+        <div id="resultDisplay"></div>
+
+        <div class="scoreDisplay">Player Score: <span id="playerScoreDisplay">0</span></div>
+        <div class="scoreDisplay">Computer Score: <span id="computerScoreDisplay">0</span></div>
+
+        <script src="rock-paper-scissors.js"></script> <!-- BEST PRACTICE IS TO PUT SCRIPT TAG LAST - ensures all elements have been properly geneated -->
+    </body>
+</html> <!-- html closing tag -->

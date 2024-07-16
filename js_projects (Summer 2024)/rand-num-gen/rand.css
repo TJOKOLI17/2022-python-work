@@ -1,0 +1,21 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#randBtn{
+    font-size: 3em;
+    padding: 5px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.labels{
+    font-size: 3em;
+    display: block;
+}
+
+#myLabel2{
+    font-size: 3em;
+}
+

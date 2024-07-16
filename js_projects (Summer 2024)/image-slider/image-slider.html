@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- html opening tag -->
+    <head> <!-- head element contains ONLY META DATA necessary for browser to function properly -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Image Slider</title>
+        <link rel="stylesheet" href="image-slider.css"/> 
+    </head>
+
+    <body> <!-- EVERYTHING we want the viewer to see is enclosed in the body tags -->
+        <div class="slider">
+            <div class="slides">
+                <img class="slide" src="/imgs/white-chevrolet.avif" alt="white chevrolet trax">
+                <img class="slide" src="/imgs/black-chevrolet.avif" alt="black chevrolet trax">
+                <img class="slide" src="/imgs/blue-chevrolet.avif" alt="blue chevrolet trax">
+                <img class="slide" src="/imgs/yellow-chevrolet.avif" alt="yellow chevrolet trax">
+                <img class="slide" src="/imgs/green-chevrolet.avif" alt="green chevrolet trax">
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+                <button id="enableSlideshow">Enable Sideshow: <span id="slideshowState">on</span></button>
+            </div>
+        </div>
+
+        <script src="image-slider.js"></script> <!-- BEST PRACTICE IS TO PUT SCRIPT TAG LAST - ensures all elements have been properly geneated -->
+    </body>
+</html> <!-- html closing tag -->
