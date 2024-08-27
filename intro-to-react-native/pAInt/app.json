@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "pAInt",
+    "scheme": "pAInt",
+    "slug": "pAInt",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "package": "com.tjokoli17.pAInt"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "75026863-f02b-4ed7-b671-a6579e3a854f"
+      }
+    },
+    "owner": "tjokoli17",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/75026863-f02b-4ed7-b671-a6579e3a854f"
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
