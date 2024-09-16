@@ -1,0 +1,30 @@
+.counter-div{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.count-display{
+    font-size: 10em;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.counter-btn{
+    width: 150px;
+    height: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0px 5px;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 25%);
+    background: linear-gradient(to left, hsl(53, 69%, 50%), hsl(299, 86%, 70%));
+    border: none;
+    border-radius: 5px;
+}
+
+.counter-btn:hover{
+    /* background: linear-gradient(to left, hsl(127, 69%, 50%), hsl(299, 86%, 60%)); */
+    background: linear-gradient(to right, hsl(53, 69%, 50%), hsl(299, 86%, 70%));
+
+}

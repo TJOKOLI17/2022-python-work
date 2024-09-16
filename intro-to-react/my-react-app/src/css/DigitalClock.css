@@ -1,0 +1,61 @@
+body{
+    background-image: url("./src/assets/lake-img.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-div{
+    backdrop-filter: blur(5px);
+    min-width: 100vw;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.clock{
+    color: white;
+    font-size: 6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.75);
+    text-align: center;
+    transition: opacity 0.20s;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+
+.change-format-div{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+#change-format{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsla(305, 50%, 46%, 0.75);
+    color: white;
+    cursor: pointer;
+    box-shadow: 3px 3px 9px hsla(0, 0%, 0%, 0.75);
+    transition: all 0.1s ease-in-out;
+}
+
+#change-format:active {
+    box-shadow: 1px 1px 5px hsla(0, 0%, 0%, 0.75);
+    transform: translateY(2px);
+}
+
